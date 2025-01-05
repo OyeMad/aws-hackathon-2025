@@ -1,0 +1,34 @@
+version: 0.2
+
+env:
+  variables:
+    UNITY_COMMAND: "xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' unity-editor -batchmode -nographics -logfile /dev/stdout -quit"
+    BUILD_OUTPUT_FOLDER: 'Builds/Win64'
+    BUILD_OUTPUT_NAME: 'Drone Hunt'
+    MAJOR_VERSION: '0'
+    MINOR_VERSION: '0'
+    PATCH_VERSION: '1'
+  exported-variables:
+    - CODEBUILD_BUILD_NUMBER
+    - BUILD_OUTPUT_NAME
+    - SEM_VERSION
+  git-credential-helper: yes
+phases:
+  pre_build:
+    commands:
+      - git submodule update --init --recursive
+      - SEM_VERSION=${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION}
+      - eval ${UNITY_COMMAND} -username "${UNITY_EMAIL}" -password "${UNITY_PASSWORD}" -serial "${UNITY_SERIAL}"
+  build:
+    commands:
+      - eval ${UNITY_COMMAND} -projectPath='.' -buildWindows64Player '${BUILD_OUTPUT_FOLDER}/${BUILD_OUTPUT_NAME}'
+  post_build:
+    commands:
+      - eval ${UNITY_COMMAND} -returnLicense
+artifacts:
+  files:
+    - '**/*'
+  base-directory: ${BUILD_OUTPUT_FOLDER}
+cache:
+  paths:
+    - 'Library/**/*'
