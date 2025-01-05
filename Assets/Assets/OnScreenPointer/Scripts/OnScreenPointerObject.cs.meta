@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d210dc342faadec42ac4cf99068ffd47
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257970
+  packageName: On Screen Pointer/Indicator for Game Objects
+  packageVersion: 1.0
+  assetPath: Assets/OnScreenPointer/Scripts/OnScreenPointerObject.cs
+  uploadId: 654561

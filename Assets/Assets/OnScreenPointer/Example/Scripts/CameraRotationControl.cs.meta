@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d766d04e395834547a4adbf16a5919f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257970
+  packageName: On Screen Pointer/Indicator for Game Objects
+  packageVersion: 1.0
+  assetPath: Assets/OnScreenPointer/Example/Scripts/CameraRotationControl.cs
+  uploadId: 654561

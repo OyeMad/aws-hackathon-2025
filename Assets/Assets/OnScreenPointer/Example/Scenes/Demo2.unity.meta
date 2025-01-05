@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0d6b3ba61cfe0fc42a631b76e0ed3ff0
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257970
+  packageName: On Screen Pointer/Indicator for Game Objects
+  packageVersion: 1.0
+  assetPath: Assets/OnScreenPointer/Example/Scenes/Demo2.unity
+  uploadId: 654561

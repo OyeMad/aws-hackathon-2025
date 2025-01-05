@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bfb7e93f7d537c94b8fd6cfe65b4b1ed
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257970
+  packageName: On Screen Pointer/Indicator for Game Objects
+  packageVersion: 1.0
+  assetPath: Assets/OnScreenPointer/Example/Prefabs/Red - Pointer.prefab
+  uploadId: 654561

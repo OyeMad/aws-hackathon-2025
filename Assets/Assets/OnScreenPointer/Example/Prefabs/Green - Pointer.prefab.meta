@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9d6dc08772027dc45a2d0f1e3d746326
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257970
+  packageName: On Screen Pointer/Indicator for Game Objects
+  packageVersion: 1.0
+  assetPath: Assets/OnScreenPointer/Example/Prefabs/Green - Pointer.prefab
+  uploadId: 654561
