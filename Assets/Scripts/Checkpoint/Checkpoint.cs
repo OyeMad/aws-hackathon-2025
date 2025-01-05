@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Threading.Tasks;
+using OnScreenPointerPlugin;
 
 public class Checkpoint : MonoBehaviour
 {
@@ -38,8 +39,9 @@ public class Checkpoint : MonoBehaviour
     async void Disable()
     {
         await Task.Delay(2000);
-        CapturedParticle.SetActive(false);
-        normalParticle.SetActive( false);
+        CapturedParticle?.SetActive(false);
+        normalParticle?.SetActive( false);
+        GetComponent<OnScreenPointerObject>()?.HidePointer();
     }
 
     public void HighlightSelf()

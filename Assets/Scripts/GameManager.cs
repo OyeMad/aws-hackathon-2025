@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     GameObject  StartUI;
 
+    [SerializeField]
+    GameObject UISceneObject;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
         await Task.Delay(1000);
         GameUI.SetActive( false);
         StartUI.SetActive( true);
+        UISceneObject.SetActive( true);
         await SceneManager.UnloadSceneAsync(1);
     }
 
@@ -44,6 +48,7 @@ public class GameManager : MonoBehaviour
 
         GameUI.SetActive( true);
         StartUI.SetActive( false);
+        UISceneObject.SetActive( false);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

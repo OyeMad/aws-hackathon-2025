@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1251520533423623717}
   - component: {fileID: 1606547327461448679}
   - component: {fileID: 3699221908344423760}
+  - component: {fileID: 8412947083124701784}
   m_Layer: 8
   m_Name: Point_0
   m_TagString: Untagged
@@ -73,6 +74,24 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8412947083124701784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417031143760344985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d210dc342faadec42ac4cf99068ffd47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset_local: {x: 0.1, y: 0.1}
+  moveInCircle: 1
+  circleSizeNormalized: 0.8
+  inScreenSprite: {fileID: 21300000, guid: 37b5205e392779941b385da4bfc06efe, type: 3}
+  outScreenSprite: {fileID: 21300000, guid: e08badc09e06c824d9253f5aa3fbbd1d, type: 3}
+  uiImagePrefab: {fileID: 2343905586146208888, guid: 9d6dc08772027dc45a2d0f1e3d746326, type: 3}
 --- !u!1001 &2412089847134741031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6745808954368080374, guid: 3c6fffc9740f54c538b455d86194bc1a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6745808954368080375, guid: 3c6fffc9740f54c538b455d86194bc1a, type: 3}
       propertyPath: m_LocalScale.x
