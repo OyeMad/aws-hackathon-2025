@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: RandomCheckpoints
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  maxCheckpointsToCollect: 10
+  maxCheckpointsToCollect: 20

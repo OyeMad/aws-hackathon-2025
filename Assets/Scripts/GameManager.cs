@@ -1,4 +1,6 @@
 using System.Threading.Tasks;
+using GameFramework.Madhur.Analytics;
+using Supyrb;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -35,6 +37,14 @@ public class GameManager : MonoBehaviour
         GameUI.SetActive( false);
         StartUI.SetActive( true);
         UISceneObject.SetActive( true);
+                
+        var customEvent = new GameEventBuilder("level_complete")
+        .AddAttribute("level", "1")
+        .Build();
+
+        Signals.Get<GameEventSignal>().Dispatch(customEvent);
+
+
         await SceneManager.UnloadSceneAsync(1);
     }
 
@@ -49,6 +59,13 @@ public class GameManager : MonoBehaviour
         GameUI.SetActive( true);
         StartUI.SetActive( false);
         UISceneObject.SetActive( false);
+
+        var customEvent = new GameEventBuilder("level_start")
+        .AddAttribute("level", "1")
+        .Build();
+
+        Signals.Get<GameEventSignal>().Dispatch(customEvent);
+
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
